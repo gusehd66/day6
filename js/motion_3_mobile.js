@@ -50,8 +50,6 @@ window.onload = function () {
         })(i);
     }
 
-    //alert(mobileChk())
-
     if (mobileChk()) {
         contentWrap.addEventListener("touchstart", touchFunc, false);
         // contentWrap.addEventListener("touchmove", touchFunc, false);
@@ -62,9 +60,6 @@ window.onload = function () {
     var end_X = 0;
 
     function touchFunc(evt) {
-        // console.log(evt.type)
-        // return false;
-        // evt.preventDefault();
 
         var type = null;
         var touch = null;
@@ -74,7 +69,6 @@ window.onload = function () {
                 type = "mousedown";
                 touch = evt.changedTouches[0];
                 start_X = touch.clientX;
-                //console.log("start_X : " + start_X);
                 end_X = 0;
                 break;
             // case "touchmove":
@@ -87,11 +81,8 @@ window.onload = function () {
                 touch = evt.changedTouches[0];
                 end_X = touch.clientX;
 
-                //console.log("end_X : " + end_X);
-
                 var chkNum = start_X - end_X;
                 var chkNumAbs = Math.abs(chkNum);
-                //console.log(chkNum)
 
                 if (chkNumAbs > 100) {
                     // //터치를 많이 했으면 실행
@@ -117,7 +108,6 @@ window.onload = function () {
     }
 
     //최초실행
-    // pageNum = 2;
     pageChangeFunc();
 }
 
