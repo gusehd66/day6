@@ -21,12 +21,12 @@ body {
 
 .contentWrap .bgm_box{
   position: absolute;
-  left: 40%;
-  transform: translate(-60%, -300%);
+  left: 28rem;
+  top: -20vh;
 }
 
 .contentWrap .bgm_box #bgm {
-  width: 300px;
+  width: 35rem;
 }
 
 .contentWrap .album {
@@ -61,6 +61,16 @@ body {
     opacity: 1;
     margin: 19rem 1.4rem;
     line-height: 0.7rem;
+  }
+
+  .contentWrap .bgm_box{
+    position: absolute;
+    left: 1rem;
+    top: -20vh;
+  }
+
+  .contentWrap .bgm_box #bgm {
+    width: 300px;
   }
 }
 
