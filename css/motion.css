@@ -19,6 +19,16 @@ body {
   touch-action: none;
 }
 
+.contentWrap .bgm_box{
+  position: absolute;
+  left: 40%;
+  transform: translate(-60%, -300%);
+}
+
+.contentWrap .bgm_box #bgm {
+  width: 300px;
+}
+
 .contentWrap .album {
   position: absolute;
   top: 47%;
@@ -30,6 +40,11 @@ body {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
+
+.contentWrap .album .album_info h2 {
+  color:#3e2cd8;
+  }
+
 .contentWrap .album .album_info {
   margin-left: 50%;
   opacity: 0;
@@ -46,10 +61,6 @@ body {
     opacity: 1;
     margin: 19rem 1.4rem;
     line-height: 0.7rem;
-  }
-
-  .contentWrap .album .album_info h2 {
-  color:#3e2cd8;
   }
 }
 
