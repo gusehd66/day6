@@ -5,22 +5,30 @@ var pageNum = 0;
 var totalNum = 0;
 var album;
 var pointBtnAll;
+var lyrics;
 var bgArray = new Array();
 bgArray[0] = ["#d27753", "#d8c4c9", "#d59e8f"];
 bgArray[1] = ["#57c5c4", "#ffffff", "#a4dfdf"];
-bgArray[2] = ["#811c7d", "#d7d8d4", "#b083ad"];
-bgArray[3] = ["#407ca1", "#b7bd99", "#90a89b"];
-bgArray[4] = ["#5989f5", "#dddbda", "#a4b8e6"];
-bgArray[5] = ["#010101", "#fdde92", "#c3ab70"];
+bgArray[2] = ["#811c7d", "#d7d8d4", "#ad7caa"];
+bgArray[3] = ["#407ca1", "#b7bd99", "#7d9d9d"];
+bgArray[4] = ["#5989f5", "#dddbda", "#98b0e8"];
+bgArray[5] = ["#010101", "#fdde92", "#7c6d48"];
+
+function showPopup() {
+    window.open("page/" + [pageNum] + ".html", "music", "width=375, height=500,left=100,top=50");
+}
+
 window.onload = function () {
-    prev_button = document.querySelectorAll("button")[0];
-    next_button = document.querySelectorAll("button")[1];
+    prev_button = document.querySelector(".PREV");
+    next_button = document.querySelector(".NEXT");
 
     contentWrap = document.querySelector(".contentWrap");
     disk_inner = document.querySelectorAll(".disk_inner");
     album = document.querySelectorAll(".album");
     pointBtnAll = document.querySelectorAll(".pointWrap li");
     totalNum = album.length;
+
+    lyrics = document.querySelectorAll(".lyrics");
 
     prev_button.addEventListener("click", function () {
         if (pageNum > 0) {
@@ -129,6 +137,7 @@ function pageChangeFunc() {
     }
 
     disk_inner[pageNum].style.background = bgArray[pageNum][2];
+    lyrics[pageNum].style.background = bgArray[pageNum][2];
 }
 
 

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size:0.8rem;
+  font-family: yg-jalnan;
+  border-radius: 20px;
+  border: solid 1px white;
+  color: whitesmoke;
+  background-color:#d27753;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.lyrics_title {
+  font-size: 25px;
+  padding: 1.5rem;
+}
+
+.lyrics_box {
+  margin-bottom: 10%;
+}
