@@ -128,6 +128,12 @@ body {
   animation: rotateAni 10s ease infinite;
 }
 
+.lyrics {
+  position: absolute;
+  top: 10vh;
+  left: -5%;
+}
+
 @media only screen and (max-width: 720px) {
   .contentWrap .album .disk {
     width: 244px;
